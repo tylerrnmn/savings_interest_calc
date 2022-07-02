@@ -1,0 +1,18 @@
+import math
+
+print('Welcome to Tyler\'s Savings Calculator!')
+print('Please enter the following...')
+
+rate = float(input('Interest Rate from your bank as a decimal: '))
+print()
+
+base = float(input('Current savings in dollars and cents: '))
+print()
+
+years = float(input('How many years will you hold your savings? '))
+print()
+
+total = float(base * math.pow(1 + (rate / 100) , years))
+
+print(f'Your {base} will be worth {total:.2f} in {years} years.')
+print('Thank you for using Tyler\'s Savings Calculator :)')
